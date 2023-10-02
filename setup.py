@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
   name="pythonUtilitiesProject",
-  version="0.1.0",
+  version="0.1.1",
   description="Utilities used for the german supermarket web scrapping project",
   long_description=open('README.md').read(),
   packages= find_packages(),
