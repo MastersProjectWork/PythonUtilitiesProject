@@ -4,10 +4,11 @@ setup(
   name="pythonUtilitiesProject",
   version="0.1.0",
   description="Utilities used for the german supermarket web scrapping project",
+  long_description=open('README.md').read(),
   packages= find_packages(),
   classifiers=[
         "Programming Language :: Python :: 3",
   ],
-  python_requires=">=3.6",
+  python_requires=">=3.6"
 )
 
