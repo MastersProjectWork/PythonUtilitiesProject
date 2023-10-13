@@ -27,3 +27,10 @@ class TestUtilities(unittest.TestCase):
         expected = "mal mike"
         result = Utilities.modify_special_characters(test_value)
         self.assertEqual(result, expected, "The input {} should return {} with the special characters \\xa0 replaced with a space".format(test_value, expected))
+
+    def test_split_string_to_number_and_text(self) -> float:
+        test_value = "21mal90mike50"
+        test_value = "21mal90mike50"
+        expected = {"nums": ['21', '90', '50'], "chars":['mal', 'mike']}
+        result = Utilities.split_string_to_number_and_text(test_value)
+        self.assertEqual(result, expected, "The input {} should return {} with the special characters \\xa0 replaced with a space".format(test_value, expected))
